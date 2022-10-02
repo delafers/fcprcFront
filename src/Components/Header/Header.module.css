@@ -1,0 +1,70 @@
+.rows{
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+}
+.minpros{
+    background-color: #3b4866;
+    display: flex;
+    justify-content:space-around;
+    padding-top: 10px;
+    color: white;
+}
+.minText{
+    font-size: 14px;
+}
+.picture{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.picture img{
+
+}
+.hotline{
+    display: grid;
+    grid-template-rows: 40px 40px 40xp;
+    grid-gap: 8px;
+    margin-top: 5px;
+}
+.block{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    height: 38px;
+    width: 190px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+.block b{
+    display: block;
+}
+.block:hover{
+
+}
+.block img{
+    width: 35px;
+    padding: 5px;
+}
+.finder{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 10px;
+    
+}
+.findBlock{
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+.findBlock:hover{
+    color: #ff5845
+}
+.findBack{
+    background-color: #f7f7f7;
+}
