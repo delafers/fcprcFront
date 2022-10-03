@@ -21,7 +21,7 @@
     margin-right: 150px;
 }
 .picture img{
-
+    width: 52vw;
 }
 .hotline{
     display: grid;
@@ -33,11 +33,16 @@
     display: grid;
     grid-template-columns: 1fr 6fr;
     height: 38px;
-    width: 190px;
-    border: 2px solid black;
+    width: 210px;
+    border: 2px solid #404e6e;
     border-radius: 10px;
-    font-size: 11px;
+    color:#404e6e;
+    font-size: 12px;
     cursor: pointer;
+}
+.block:hover{
+    background-color: #404e6e;
+    color: white
 }
 .block b{
     display: block;
@@ -54,12 +59,16 @@
     margin-right: 150px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    margin-top: 10px;
+    margin-top: 2px;
     
+}
+.finder img{
+    height: 25px;
+    padding-right: 2px;
+    padding-top: 10px;
 }
 .findBlock{
     cursor: pointer;
-    padding-top: 10px;
 
 }
 .findBlock:hover{

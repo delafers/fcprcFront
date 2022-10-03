@@ -1,13 +1,21 @@
 import React from "react";
 import s from "./Header.module.css"
-import logo from "../../assets/img/arrow-128.ico"
+import logo from "../../assets/SVG/Logo.svg"
 import gor1 from "../../assets/img/gor-lin-a1.png"
 import gor2 from "../../assets/img/gor-lin-a2.png"
+import ico1 from "../../assets/SVG/01.svg"
+import ico2 from "../../assets/SVG/02.svg"
+import ico3 from "../../assets/SVG/03.svg"
+import ico4 from "../../assets/SVG/04.svg"
+import ico5 from "../../assets/SVG/05.svg"
+import ico6 from "../../assets/SVG/06.svg"
+
 import { useState } from "react";
 import "./style.css";
-const HeaderBlock = ({text}) => {
+const HeaderBlock = ({text, img}) => {
     return<>
     <div className={s.findBlock}>
+      <img src={img}/>
         {text}
     </div>
     </>
@@ -26,7 +34,7 @@ const Header = () => {
         </div>
         <div className={s.picture}>
             <div>
-                d
+              
                 <img src={logo}/>
             </div>
 
@@ -57,10 +65,9 @@ const Header = () => {
             </div>
         </div>
         <div className={s.findBack}>
-
-        
         <div className={s.finder}>
-        <div onMouseMove={() => {setActive(true)}}>
+        <div onMouseMove={() => {setActive(true)}} onBlur={() => {setActive(false)}}>
+          <img src={ico1}/>
             О центре 
             <nav
           className={`menu ${active ? "active" : "inactive"}`}
@@ -111,11 +118,11 @@ const Header = () => {
           </ul>
         </nav>
         </div>
-        <HeaderBlock text="Мониторинги"/>
-        <HeaderBlock text="Мероприятия"/>
-        <HeaderBlock text="Образование"/>
-        <HeaderBlock text="Библиотека"/>
-        <HeaderBlock text="Обращения граждан"/>
+        <HeaderBlock text="Мониторинги" img={ico2}/>
+        <HeaderBlock text="Мероприятия" img={ico3}/>
+        <HeaderBlock text="Образование" img={ico4}/>
+        <HeaderBlock text="Библиотека" img={ico5}/>
+        <HeaderBlock text="Обращения граждан" img={ico6}/>
         </div>
         </div>
 

@@ -37,12 +37,27 @@
     grid-template-columns: repeat(7, 1fr);
     grid-gap: 15px;
 }
+.seven img{
+    height: 80px;
+}
 .dirBlock{
     background-color: white;
     height: 170px;
     border-radius: 5px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.dirBlock:hover{
+    box-shadow: 1px 26px 61px -35px rgb(0 0 0 / 82%);
+}
+.colorImg{
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+}
+.colorImg:hover{
+    opacity: 1;
 }
 .dirBlock span{
     text-decoration: none;
@@ -59,26 +74,61 @@
     margin-top: 30px;
 }
 .hotlines{
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 180px;
+    margin-right: 180px;
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px
 }
+.hotlineBlock{
+    min-height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
 .hotline{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    border: 1px solid black;
-    border-radius: 10px;
-    height: 200px;
-    background-color: white;
+      
 }
 .hotline img{
-    width: 140px;
+    width: 120px;
+    height: 120px;
     padding: 10px;
 }
 .hotlineText{
     padding: 10px;
     font-size: 20px;
 }
+.buttonHotl{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 80%;
+    height: 30px;
+    padding-top: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(29, 29, 32, 0.815);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.buttonHotl:hover{
+    background-color: #404e6e;
+    color: white;
+}
+.helpful{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 2fr;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+.helpful img{
+    height: 100px;
+    max-width: 150px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.helpful img:hover{
+    opacity: 1;
+ }
