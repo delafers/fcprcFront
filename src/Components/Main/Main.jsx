@@ -8,6 +8,26 @@ import banner1 from "../../assets/img/banner1.png"
 import banner2 from "../../assets/img/banner2.png"
 import img1 from "../../assets/Directions/1_1.svg"
 import img2 from "../../assets/Directions/1_2.svg"
+import img3 from "../../assets/Directions/2_1.svg"
+import img4 from "../../assets/Directions/2_2.svg"
+import img5 from "../../assets/Directions/3_1.svg"
+import img6 from "../../assets/Directions/3_2.svg"
+import img7 from "../../assets/Directions/4_1.svg"
+import img8 from "../../assets/Directions/4_2.svg"
+import img9 from "../../assets/Directions/5_1.svg"
+import img10 from "../../assets/Directions/5_2.svg"
+import img11 from "../../assets/Directions/6_1.svg"
+import img12 from "../../assets/Directions/6_2.svg"
+import img13 from "../../assets/Directions/7_1.svg"
+import img14 from "../../assets/Directions/7_2.svg"
+import img15 from "../../assets/Directions/8_1.svg"
+import img16 from "../../assets/Directions/8_2.svg"
+import img17 from "../../assets/Directions/9_1.svg"
+import img18 from "../../assets/Directions/9_2.svg"
+import img19 from "../../assets/Directions/10_1.svg"
+import img20 from "../../assets/Directions/10_2.svg"
+import img21 from "../../assets/Directions/11_1.svg"
+import img22 from "../../assets/Directions/11_2.svg"
 import gl1 from "../../assets/img/gl1.jpg"
 import gl2 from "../../assets/img/gl2.jpg"
 import gl3 from "../../assets/img/Logotip-linii.svg"
@@ -94,6 +114,44 @@ Timer()
         Полезные ресурсы
     </h2>
     <Helpful />
+    <footer style={{backgroundColor: "#455476"}} className={s.foot}>
+        <div style={{margin: "100px 100px 0px 100px"}}>
+            <div style={{display: "grid", gridTemplateColumns: "1fr 1fr 1fr", color: "#fff"}}>
+                <div style={{margin: "10px 10px 20px 10px", opacity: 0.6, fontSize: "19px"}}>
+                    О центре
+                </div>
+                <div style={{margin: "10px 10px 20px 10px", opacity: 0.6, fontSize: "19px"}}>
+                    Ключевые проекты
+                </div>
+                <div style={{margin: "10px 10px 20px 10px", opacity: 0.6, fontSize: "19px"}}>
+                    Мероприятия
+                </div>
+                <div>
+                <ul class="contact-list">
+                        <li><span class="icon-address1"></span><a href="https://yandex.ru/maps/?text=115093%2C+%D0%B3.+%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C+%D1%83%D0%BB.+%D0%9B%D1%8E%D1%81%D0%B8%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%2C+%D0%B4.+51" rel="nofollow" target="_blank">115093, г. Москва, ул. Люсиновская, д. 51</a>
+                        </li><li><span class="icon-maillt"></span><a href="mailto:info@fcprc.ru" class="href">info@fcprc.ru</a>
+                        </li><li><span class="icon-phonelt"></span><a href="tel:+74994440806,10008" class="href">+7 (499) 444-08-06, <span>доб. 100 08</span></a>
+                    </li></ul>
+                </div>
+                <div>
+                </div>
+                <div >
+                    Все мероприятия
+                </div>
+            </div>
+            <div>
+                <p>
+                <a class="shrift10" target="_blank" rel="nofollow" href="https://edu.gov.r">МИНИСТЕРСТВО ПРОСВЕЩЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ</a>
+                </p>
+                <div style={{display: "flex", justifyContent:"space-between"}}>
+
+                <span style={{color:"#fff", opacity: 0.6}}>© ФГБУ "Центр защиты прав и интересов детей", 2022</span>
+                <a target="_blank" rel="noopener" href="http://fcprc.ru/wp-content/uploads/2021/08/20-1-29-04-2021.pdf">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     </>
 }
 const Directions = () => {
@@ -104,49 +162,19 @@ const Directions = () => {
             <div class="main-pro row">
                              
                 <div class={s.seven}>
-                    <SevenBlock img1={img1} img2={img2}/>
-                    <a href="/kdn/" className={s.dirBlock}>
-                        
-                        <span>ФРЦ КДН и ЗП</span>
-                    </a>
-                    <a href="/nashi-proekty/international/" className={s.dirBlock}>
-                        
-                        <span>Международное сотрудничество</span>
-                    </a>
-                    <a href="/mediacia/" className={s.dirBlock}>
-                        
-                        <span>Медиация</span>
-                    </a>
-                    <a href="/profilaktika-deviantnogo-povedeniya/" className={s.dirBlock}>
-                        
-                        <span>Профилактика девиантного поведения</span>
-                    </a>
-                    <a href="/suvu/" className={s.dirBlock}>
-                        
-                        <span>ФРЦ СУВУ</span>
-                    </a>
-                    <a href="/vserossijskie-konkursy/" className={s.dirBlock}>
-                        
-                        <span>Всероссийские конкурсы</span>
-                    </a>
+                    <SevenBlock img1={img1} img2={img2} text="Десятилетие детства"/>
+                    <SevenBlock img1={img3} img2={img4} text="ФРЦ КДН и ЗП"/>
+                    <SevenBlock img1={img5} img2={img6} text="Международное сотрудничество"/>
+                    <SevenBlock img1={img7} img2={img8} text="Медиация"/>
+                    <SevenBlock img1={img9} img2={img10} text="Профилактика девиантного поведения"/>
+                    <SevenBlock img1={img11} img2={img12} text="ФРЦ СУВУ"/>
+                    <SevenBlock img1={img13} img2={img14} text="Всероссийские конкурсы"/>
                 </div>
                 <div className={s.fore}>
-                    <a href="https://frcopeca.ru" className={s.dirBlock}>
-                        
-                        <span>ФРЦ в сфере защиты прав детей, оставшихся без попечения родителей</span>
-                    </a>
-                    <a href="https://pmpkrf.ru" className={s.dirBlock}>
-                        
-                        <span>ФРЦ ПМПК</span>
-                    </a>
-                    <a href="https://ovzrf.ru" className={s.dirBlock}>
-                        
-                        <span>ППМС Помощь</span>
-                    </a>
-                    <a href="https://fcprc.ru/federalnyj-tsentr-razvitiya-programm-sotsializatsii-podrostkov/" className={s.dirBlock}>
-                       
-                        <span>Федеральный центр развития программ социализации подростков</span>
-                    </a>
+                <SevenBlock img1={img15} img2={img16} text="ФРЦ в сфере защиты прав детей, оставшихся без попечения родителей"/>
+                <SevenBlock img1={img17} img2={img18} text="ФРЦ ПМПК"/>
+                <SevenBlock img1={img19} img2={img20} text="ППМС Помощь"/>
+                <SevenBlock img1={img21} img2={img22} text="Федеральный центр развития программ социализации подростков"/>
                 </div>
             </div>
         
@@ -156,12 +184,12 @@ const Directions = () => {
 }
 const SevenBlock = ({href, text, img1, img2}) => {
     return<>
-    <a href="https://10letie.edu.gov.ru" className={s.dirBlock}>
-        <div style={{backgroundImage: {img1},}}>
+    <a href="https://10letie.edu.gov.ru" className={s.dirBlock} >
+        <div style={{backgroundImage: `url(${img2}`}}>
             <img src={img1} className={s.colorImg}/>
         </div>
                         <div style={{BackgroundImage: {img1}}}>                    
-                        <span>Десятилетие детства</span>
+                        <span>{text}</span>
                         </div>
                         
                     </a>

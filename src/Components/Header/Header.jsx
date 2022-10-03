@@ -3,12 +3,14 @@ import s from "./Header.module.css"
 import logo from "../../assets/SVG/Logo.svg"
 import gor1 from "../../assets/img/gor-lin-a1.png"
 import gor2 from "../../assets/img/gor-lin-a2.png"
+import gor3 from "../../assets/img/mediac.gif"
 import ico1 from "../../assets/SVG/01.svg"
 import ico2 from "../../assets/SVG/02.svg"
 import ico3 from "../../assets/SVG/03.svg"
 import ico4 from "../../assets/SVG/04.svg"
 import ico5 from "../../assets/SVG/05.svg"
 import ico6 from "../../assets/SVG/06.svg"
+import help1 from "../../assets/Helpful/pol_res1.png"
 
 import { useState } from "react";
 import "./style.css";
@@ -26,10 +28,12 @@ const Header = () => {
     <header className={s.rows}>
         <div className={s.minpros}>
           <div className={s.minText}>
+            <img src={help1}/>
             МИНИСТЕРСТВО ПРОСВЕЩЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ
           </div>
           <div>
           Поиск
+          <span>Версия для слабовидящих</span>
           </div>
         </div>
         <div className={s.picture}>
@@ -56,7 +60,7 @@ const Header = () => {
                 </span>
                 </div>
                 <div className={s.block}>
-                <img  src={gor2}/> 
+                <img  src={gor3}/> 
                 <span>
                     <b>Горячая линия </b>
                         Тестирование обучающихся

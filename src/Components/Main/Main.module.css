@@ -50,19 +50,28 @@
 }
 .dirBlock:hover{
     box-shadow: 1px 26px 61px -35px rgb(0 0 0 / 82%);
+    opacity: 1;
+
 }
+
 .colorImg{
     opacity: 0;
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 .colorImg:hover{
     opacity: 1;
 }
+.grayImg{
+    opacity: 1;
+    z-index: 1;
+    position: relative;
+}
 .dirBlock span{
     text-decoration: none;
     color:black;
     padding: 5px;
+   
 }
 .fore{
     margin-top: 10px;
@@ -70,19 +79,22 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
 }
+.fore img{
+    height: 80px;
+}
 .banners{
     margin-top: 30px;
 }
 .hotlines{
-    margin-left: 180px;
-    margin-right: 180px;
+    margin-left: 10vw;
+    margin-right:10vw;
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px
 }
 .hotlineBlock{
-    min-height: 200px;
+    
     background-color: white;
     border: 1px solid black;
     border-radius: 10px;
@@ -90,7 +102,7 @@
 .hotline{
     display: grid;
     grid-template-columns: 1fr 2fr;
-      
+    height: 250px;
 }
 .hotline img{
     width: 120px;
@@ -131,4 +143,9 @@
 }
 .helpful img:hover{
     opacity: 1;
+ }
+ .foot a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .8;
  }
