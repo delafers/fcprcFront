@@ -6,15 +6,21 @@ import { compose } from 'redux';
 import {BrowserRouter, Route, Router, Routes} from 'react-router-dom'
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
+import Mediacia from './Components/Mediacia/Mediacia';
 
 
 function App() {
-  return (
+  return (<BrowserRouter>
     <div className="App">
       <Header />
-      <Main />
+      <Routes>
+            <Route exact={true} path={"/"} element={<Main/>}/>
+            <Route path="/mediacia" element={<Mediacia />}/>
+        </Routes>
     </div>
+    </BrowserRouter>
   );
+  
 }
 const mapStateToProps = (state) => (
   {initialized: state.app.initialized})
@@ -23,10 +29,11 @@ let AppContainer = compose(
   connect(mapStateToProps, {}))(App)
 
 const LastFrontApp = () => {
-  return <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Provider store={store}>
+  return<>
+  <Provider store={store} >
           <AppContainer/>
       </Provider>
-  </BrowserRouter>
+      </>
+
 }
 export default App;

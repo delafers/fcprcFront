@@ -1,0 +1,125 @@
+.info{
+  color:brown;
+  width: 60vw;
+  opacity: 0;
+  visibility: hidden;
+}
+.info ul{
+  height: 0;
+}
+.arrow{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -160%;
+  cursor: pointer;
+  background-color: #455476;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  opacity: 1;
+  z-index: 4;
+  top:-50%;
+}
+.downarrow{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -160%;
+  cursor: pointer;
+  background-color: #500d50;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  opacity: 1;
+  z-index: 4;
+  top:-50%;
+  rotate: 180deg;
+}
+.arrow:hover{
+  background-color: brown;
+  transition: all 2s;
+}
+.arrowdowm{
+
+}
+.arrowdown:hover{
+
+}
+.ico{
+  z-index: 5;
+  width: 600px;
+  background-size: cover;
+}
+.fall{
+  width: 60vw;
+  margin: 0 auto;
+  max-width: 1300px;
+  cursor: pointer;
+ margin-top: 30px;
+ 
+}
+.fallact{
+  width: 60vw;
+  background: rgba(253, 235, 242, .8) ;
+  margin: 0 auto;
+  max-width: 1200px;
+  cursor: pointer;
+}
+.block{
+  display: flex;
+ flex-direction: row;
+ background: rgba(253, 235, 242, .8) ;
+
+}
+.blockHead{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 40px;
+  font-size: 28px;
+  line-height: 1.2;
+  font-family: 'Proxima Nova Lt';
+  color: #3A4663;
+  font-weight:lighter;
+}
+.fall img{
+  height: 100%;
+}
+.fallact img{
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8) ;
+}
+.active{
+  opacity: 1;
+  visibility: visible;
+  background-color:white ;
+  color: white;
+  border: pink solid 2px;
+  border-radius: 2px;
+}
+.fallact{
+  width: 60vw;
+  background: rgba(253, 235, 242, .8) ;
+  margin: 0 auto;
+  max-width: 1200px;
+  cursor: pointer;
+}
+.active li{
+  list-style: none;
+    padding: 0;
+    margin: 0;
+    min-height: 40px;
+    margin-left: 0px;
+    margin: 5px;
+}
+.active ul{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
