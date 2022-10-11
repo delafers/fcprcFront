@@ -182,9 +182,9 @@ const Directions = () => {
     
     </div>
 }
-const SevenBlock = ({href, text, img1, img2}) => {
+const SevenBlock = ({href="https://10letie.edu.gov.ru", text, img1, img2}) => {
     return<>
-    <a href="https://10letie.edu.gov.ru" className={s.dirBlock} >
+    <a href="/mediacia/" className={s.dirBlock} >
         <div style={{backgroundImage: `url(${img2}`}}>
             <img src={img1} className={s.colorImg}/>
         </div>
