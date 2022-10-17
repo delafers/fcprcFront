@@ -162,11 +162,11 @@ const Directions = () => {
             <div class="main-pro row">
                              
                 <div class={s.seven}>
-                    <SevenBlock img1={img1} img2={img2} text="Десятилетие детства"/>
+                    <SevenBlock img1={img1} img2={img2} text="Десятилетие детства" />
                     <SevenBlock img1={img3} img2={img4} text="ФРЦ КДН и ЗП"/>
                     <SevenBlock img1={img5} img2={img6} text="Международное сотрудничество"/>
-                    <SevenBlock img1={img7} img2={img8} text="Медиация"/>
-                    <SevenBlock img1={img9} img2={img10} text="Профилактика девиантного поведения"/>
+                    <SevenBlock img1={img7} img2={img8} text="Медиация" href="/mediacia/"/>
+                    <SevenBlock img1={img9} img2={img10} text="Профилактика девиантного поведения"  href="/profilaktika-deviantnogo-povedeniya/"/>
                     <SevenBlock img1={img11} img2={img12} text="ФРЦ СУВУ"/>
                     <SevenBlock img1={img13} img2={img14} text="Всероссийские конкурсы"/>
                 </div>
@@ -184,12 +184,12 @@ const Directions = () => {
 }
 const SevenBlock = ({href="https://10letie.edu.gov.ru", text, img1, img2}) => {
     return<>
-    <a href="/mediacia/" className={s.dirBlock} >
+    <a href={href} className={s.dirBlock} >
         <div style={{backgroundImage: `url(${img2}`}}>
             <img src={img1} className={s.colorImg}/>
         </div>
                         <div style={{BackgroundImage: {img1}}}>                    
-                        <span>{text}</span>
+                        <span style={{textDecoration:"none"}}>{text}</span>
                         </div>
                         
                     </a>

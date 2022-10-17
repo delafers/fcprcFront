@@ -75,8 +75,17 @@ const Mediacia = () => {
             
         </Falldown>
         <Falldown url={s6} header={"Участие в мероприятиях партнеров"}>
+        <HrefLi text={"Всероссийский молодёжный форум «Территория смыслов» – 2022"}/>
+        <HrefLi text={"I межрегиональный форум «Подростки 360»"}/>
+        <HrefLi text={"Вебинар «Медиативные практики в работе с несовершеннолетними: содействие социализации» 20 мая 2022"}/>
+        <HrefLi text={"I Международный фестиваль «Медиация. Молодость. Будущее!»"}/>
+        <HrefLi text={"II Международный форум «Сибирь: Европа и Азия – диалог о медиации»"}/>
+
         </Falldown>
         <Falldown url={s7} header={"Мониторинг служб медиации"}>
+        <FileLi text="Мониторинг 2020-21 года .pdf"/>
+        <FileLi text="Мониторинг 2019-20 года .pdf"/>
+
         </Falldown>
         <Falldown url={s8} header={"Реестр НКО, применяющих медиативные и восстановительные технологии"}>
         </Falldown>
@@ -102,7 +111,7 @@ const HrefLi = ({text, href}) => {
 const FileLi = ({text, href="https://fcprc.ru/mediacia/"}) => {
     return<li className={s.file}>
         <a href={href} >
-        <div  >
+        <div>
             <img src={ico2}/>
             {text}
         </div>

@@ -83,3 +83,17 @@
 .findBack{
     background-color: #f7f7f7;
 }
+.search{
+    margin-right: 5px;
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 15px
+}
+.vision{
+    padding: 8px;
+    font-size: 16px;
+    background-color: #df7b9a;
+    color: white;
+    border-radius: 5px;
+}

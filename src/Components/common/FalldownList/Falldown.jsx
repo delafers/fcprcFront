@@ -5,6 +5,7 @@ import "./Falldown.css"
 import img21 from "../../../assets/img/1.png"
 
 
+
 const Falldown = ({url, header, children, style={}}) => {
   
     const [active, setActive] = useState(false)
@@ -16,7 +17,7 @@ const Falldown = ({url, header, children, style={}}) => {
         </div>  
       <span className={active ? s.downarrow : s.arrow}> V </span></div>
      
-      <div className={s.ico} style={{backgroundImage: `url(${url})`, zIndex:3, opacity: 0.5}}>
+      <div className={s.ico} style={{backgroundImage: `url(${url})`, zIndex:3, opacity: 0.7}}>
       
        </div>
        </div>         

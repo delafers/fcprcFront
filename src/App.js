@@ -7,6 +7,7 @@ import {BrowserRouter, Route, Router, Routes} from 'react-router-dom'
 import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import Mediacia from './Components/Mediacia/Mediacia';
+import Behavior from './Components/Behavior_Prevention/Behavior';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Routes>
             <Route exact={true} path={"/"} element={<Main/>}/>
             <Route path="/mediacia" element={<Mediacia />}/>
+            <Route path="/profilaktika-deviantnogo-povedeniya/" element={<Behavior />}/>
         </Routes>
     </div>
     </BrowserRouter>

@@ -14,6 +14,7 @@ import help1 from "../../assets/Helpful/pol_res1.png"
 
 import { useState } from "react";
 import "./style.css";
+import { NavLink } from "react-router-dom";
 const HeaderBlock = ({text, img}) => {
     return<>
     <div className={s.findBlock}>
@@ -31,15 +32,20 @@ const Header = () => {
             <img src={help1}/>
             МИНИСТЕРСТВО ПРОСВЕЩЕНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ
           </div>
-          <div>
-          Поиск
-          <span>Версия для слабовидящих</span>
+          <div style={{marginTop: "12px"}}>
+            <span className={s.search}>
+            Поиск
+            </span>
+         
+          <span className={s.vision}>Версия для слабовидящих</span>
           </div>
         </div>
         <div className={s.picture}>
             <div>
-              
-                <img src={logo}/>
+              <NavLink to="/">
+              <img src={logo}/>
+              </NavLink>
+               
             </div>
 
             <div className={s.hotline}>
@@ -70,7 +76,7 @@ const Header = () => {
         </div>
         <div className={s.findBack}>
         <div className={s.finder}>
-        <div onMouseMove={() => {setActive(true)}} onBlur={() => {setActive(false)}}>
+        <div onMouseMove={() => {setActive(true)}} onMouseOut={() => {setActive(false)}}>
           <img src={ico1}/>
             О центре 
             <nav

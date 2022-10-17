@@ -1,0 +1,96 @@
+.hrefblock{
+    min-height: 34px;
+    border: 2px solid #3a4663;
+    display: inline-block;
+    padding: 5px;
+    max-width: 750px;
+    color: #3a4663;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.hrefblock:hover{
+    background-color: #3a4663;
+    color: white;
+}
+.hrefblock a{
+    text-decoration: none;
+}
+.hrefblock img{
+    margin-top: 5px;
+    height: 25px;
+    padding-left: 5px;
+}
+.file{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.file a{
+    text-decoration: none;
+    color: #3a4663;;
+}
+.file a:hover{
+    text-decoration: underline;
+    color: #ca2357;
+}
+.file img{
+    margin-top: 5px;
+    height: 25px;
+    padding-right: 5px;
+}
+.header img{
+    height: 90px;
+}
+.header{
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    max-height: 1200px;
+    margin-left: 18vw;
+}
+.block{
+    display: flex;
+   flex-direction: row;
+   background: rgba(253, 235, 242, .8) ;
+  
+  }
+.fall{
+    width: 60vw;
+    margin: 0 auto;
+    max-width: 1300px;
+    cursor: pointer;
+   margin-top: 30px;
+  }
+.ico{
+    z-index: 5;
+    width: 600px;
+    background-size: cover;
+  }
+  .blockHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .blockHead img{
+    height: 40px;
+    margin-left: 20px;
+  }
+  .text{
+    margin-top: 20px;
+    color: #3a4663;
+    font-size: 24px;
+  }
+  .button{
+    border: 2px solid #3a4663;
+    padding: 10px;
+    width: 120px;
+    margin-left: 25px;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .button:hover{
+    color: #fff;
+    background-color: #3a4663;
+  }
